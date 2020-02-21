@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/time_bg_green">
+
+    <RelativeLayout
+        android:id="@+id/gg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/child"
+            android:layout_width="match_parent"
+            android:layout_height="330dp">
+
+            <me.myatminsoe.mdetect.MMTextView
+                android:id="@+id/datepickertitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="@string/mingalarpar"
+                android:textColor="@color/colorAccent"
+                android:textSize="17sp" />
+
+            <me.myatminsoe.mdetect.MMTextView
+                android:id="@+id/datepickermessage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/datepickertitle"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/plzchoosestartdate"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <me.myatminsoe.mdetect.MMButtonView
+        android:id="@+id/datepicknext"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/gg"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/greenbgforpresent"
+        android:padding="2dp"
+        android:text="@string/ok"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/time_bg_green">
+
+    <Button
+        android:id="@+id/close"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ic_close" />
+
+    <LinearLayout
+        android:id="@+id/updaterow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/close"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="7">
+
+        <Spinner
+            android:id="@+id/updateSpn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="4"
+            android:prompt="@string/prompt" />
+
+        <me.myatminsoe.mdetect.MMEditText
+            android:id="@+id/updateRoll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="3"
+            android:hint="@string/rollno"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/updaterow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/updaterow1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="7">
+
+        <me.myatminsoe.mdetect.MMTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:padding="2dp"
+            android:text="@string/urname"
+            android:textColor="@color/detailtextcolor"
+            android:textSize="16sp" />
+
+        <me.myatminsoe.mdetect.MMEditText
+            android:id="@+id/updatename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="@string/urname"
+            android:padding="2dp"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+   <!-- <LinearLayout
+        android:id="@+id/updaterow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/updaterow2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="7">
+
+        <me.myatminsoe.mdetect.MMTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:padding="2dp"
+            android:text="@string/urphno"
+            android:textColor="@color/detailtextcolor"
+            android:textSize="16sp" />
+
+        <me.myatminsoe.mdetect.MMEditText
+            android:id="@+id/updateph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="@string/urphno"
+            android:padding="2dp"
+            android:textSize="16sp" />
+
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/updaterow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/updaterow2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="7">
+
+        <me.myatminsoe.mdetect.MMTextView
+            android:id="@+id/txtsection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:padding="2dp"
+            android:text="@string/section"
+            android:textColor="@color/detailtextcolor"
+            android:textSize="16sp" />
+
+        <me.myatminsoe.mdetect.MMEditText
+            android:id="@+id/updatesection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="@string/section"
+            android:padding="2dp"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <me.myatminsoe.mdetect.MMButtonView
+        android:id="@+id/btnupdatefordialog"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_below="@id/updaterow3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/greenbgforpresent"
+        android:text="@string/toedit"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+</RelativeLayout>

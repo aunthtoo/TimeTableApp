@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8BC34A</color>
+    <color name="colorPrimaryDark">#5a9216</color>
+    <color name="colorAccent">#8BC34A</color>
+    <color name="presscolor">#AED581</color>
+
+    <color name="failcolor">#ff0404</color>
+
+    <color name="bgcolor">#945a9216</color>
+
+    <color name="shadowcolor">#1f000000</color>
+
+    <color name="barColor">#fff</color>
+
+    <color name="red">#f44336</color>
+    <color name="yellow">#f4e80a</color>
+
+    <color name="tviewcolor">#808080</color>
+
+    <array name="array_dot_active">
+        <item>@color/colorAccent</item>
+        <item>@color/colorAccent</item>
+        <item>@color/colorAccent</item>
+        <item>@color/colorAccent</item>
+        <item>@color/colorAccent</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/tviewcolor</item>
+        <item>@color/tviewcolor</item>
+        <item>@color/tviewcolor</item>
+        <item>@color/tviewcolor</item>
+        <item>@color/tviewcolor</item>
+    </array>
+
+    <color name="nodatacolor">#9c8bc34a</color>
+
+    <color name="detailtextcolor">#b78bc34a</color>
+
+    <color name="showcase">#908bc34a</color>
+
+</resources>

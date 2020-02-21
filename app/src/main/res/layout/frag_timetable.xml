@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/firstrow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/date_background"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:weightSum="2">
+
+                <me.myatminsoe.mdetect.MMTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="@string/date"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nov 14, 2017"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/newrow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/firstrow"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <me.myatminsoe.mdetect.MMTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="3"
+                    android:padding="2dp"
+                    android:text="@string/wholedayabsent"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="15sp" />
+
+                <Switch
+                    android:id="@+id/wholedayabsent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:padding="2dp"
+                    android:text="@string/yes" />
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/secondrow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/newrow"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="22dp"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="3dp"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:id="@+id/showcasecurrenttime"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerInParent="true" />
+
+                    <TextView
+                        android:id="@+id/subject"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="8:30 AM - 9:30 AM"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="17sp" />
+
+                    <View
+                        android:id="@+id/divider"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@id/subject"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="@dimen/marginline"
+                        android:layout_marginRight="@dimen/marginline"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/colorAccent" />
+
+                    <LinearLayout
+                        android:id="@+id/third"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/divider"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <me.myatminsoe.mdetect.MMTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="2dp"
+                            android:text="@string/subject"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/sublong"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="English"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fourth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/third"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <me.myatminsoe.mdetect.MMTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="2dp"
+                            android:text="@string/teacher"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/teacher"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="U Bar Nyar"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <me.myatminsoe.mdetect.MMTextView
+                        android:id="@+id/forabsent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/fourth"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="6dp"
+                        android:padding="2dp"
+                        android:text="@string/youmiss"
+                        android:textColor="@color/red"
+                        android:textSize="15sp"
+                        android:visibility="invisible" />
+
+                    <me.myatminsoe.mdetect.MMButtonView
+                        android:id="@+id/absent"
+                        android:layout_width="@dimen/btnwidth"
+                        android:layout_height="@dimen/btnheight"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/fourth"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/greenbgforpresent"
+                        android:padding="2dp"
+                        android:text="@string/absent"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp" />
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/thirdrow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/secondrow"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="6dp"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="3dp"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:id="@+id/showcasetoday"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerInParent="true" />
+
+                    <TextView
+                        android:id="@+id/todaytimetable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:padding="2dp"
+                        android:text="@string/todaytimetable"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15sp" />
+
+
+                    <LinearLayout
+                        android:id="@+id/innerfirstrow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/todaytimetable"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal"
+                        android:weightSum="8">
+
+                        <ImageView
+                            android:id="@+id/time1"
+                            android:layout_width="@dimen/indicatorsize"
+                            android:layout_height="@dimen/indicatorsize"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_down_arrow"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/time2"
+                            android:layout_width="@dimen/indicatorsize"
+                            android:layout_height="@dimen/indicatorsize"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_down_arrow"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/time3"
+                            android:layout_width="@dimen/indicatorsize"
+                            android:layout_height="@dimen/indicatorsize"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_down_arrow"
+                            android:visibility="invisible" />
+
+                        <View
+                            android:layout_width="@dimen/indicatorsize"
+                            android:layout_height="@dimen/indicatorsize"
+                            android:layout_weight="1" />
+
+                        <ImageView
+                            android:id="@+id/time4"
+                            android:layout_width="@dimen/indicatorsize"
+                            android:layout_height="@dimen/indicatorsize"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_down_arrow"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/time5"
+                            android:layout_width="@dimen/indicatorsize"
+                            android:layout_height="@dimen/indicatorsize"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_down_arrow"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/time6"
+                            android:layout_width="@dimen/indicatorsize"
+                            android:layout_height="@dimen/indicatorsize"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_down_arrow"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/time7"
+                            android:layout_width="@dimen/indicatorsize"
+                            android:layout_height="@dimen/indicatorsize"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_down_arrow"
+                            android:visibility="invisible" />
+
+                    </LinearLayout>
+
+                    <!--  for number-->
+
+                    <LinearLayout
+                        android:id="@+id/innersecondrow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/innerfirstrow"
+                        android:layout_marginTop="12dp"
+                        android:orientation="horizontal"
+                        android:weightSum="8">
+
+                        <TextView
+                            android:id="@+id/txtInd1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="@color/tviewcolor"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/txtInd2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="2"
+                            android:textColor="@color/tviewcolor"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/txtInd3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="3"
+                            android:textColor="@color/tviewcolor"
+                            android:textSize="15sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/timesize"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/txtInd4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="4"
+                            android:textColor="@color/tviewcolor"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/txtInd5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="5"
+                            android:textColor="@color/tviewcolor"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/txtInd6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="6"
+                            android:textColor="@color/tviewcolor"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/txtInd7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="7"
+                            android:textColor="@color/tviewcolor"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+                    <!--   end of for number-->
+
+                    <LinearLayout
+                        android:id="@+id/innerthirdrow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/innersecondrow"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="8">
+
+                        <RelativeLayout
+                            android:id="@+id/tOne"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/time_bg_green"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:id="@+id/time1sub"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:text="Eng"
+                                android:textSize="@dimen/timesubsize" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/tTwo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/time_bg_green"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:id="@+id/time2sub"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:text="401"
+                                android:textSize="@dimen/timesubsize" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/tThree"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/time_bg_green"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:id="@+id/time3sub"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:text="402"
+                                android:textSize="@dimen/timesubsize" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/timesize"
+                            android:layout_weight="1" />
+
+                        <RelativeLayout
+                            android:id="@+id/tFour"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/time_bg_green"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:id="@+id/time4sub"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:text="403"
+                                android:textSize="@dimen/timesubsize" />
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/tFive"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/time_bg_green"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:id="@+id/time5sub"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:text="404"
+                                android:textSize="@dimen/timesubsize" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/tSix"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/time_bg_green"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:id="@+id/time6sub"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:text="405"
+                                android:textSize="@dimen/timesubsize" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/tSeven"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/time_bg_green"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:id="@+id/time7sub"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:text="406"
+                                android:textSize="@dimen/timesubsize" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <me.myatminsoe.mdetect.MMTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/innerthirdrow"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_horizontal"
+                        android:padding="3dp"
+                        android:text="@string/clickonthem"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="10sp" />
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <me.myatminsoe.mdetect.MMButtonView
+                android:id="@+id/viewtimetableforallday"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_below="@id/thirdrow"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/greenbgforpresent"
+                android:padding="5dp"
+                android:text="@string/view"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/time_bg_green">
+
+
+    <Button
+        android:id="@+id/mclose"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ic_close" />
+
+    <me.myatminsoe.mdetect.MMTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/mclose"
+        android:layout_marginLeft="15dp"
+        android:text="@string/edit"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp" />
+
+    <me.myatminsoe.mdetect.MMTextView
+        android:id="@+id/daynameinmonthly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mclose"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Day Name"
+        android:textColor="@color/colorAccent"
+        android:textSize="17sp" />
+
+    <View
+        android:id="@+id/dividerinmonthly"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/daynameinmonthly"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorAccent" />
+
+    <!--time one start-->
+    <LinearLayout
+        android:id="@+id/linear1inmonthly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dividerinmonthly"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="1."
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/onesub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Eng"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/onecheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--time one end-->
+
+    <!--time two start-->
+
+    <LinearLayout
+        android:id="@+id/linear2inmonthly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear1inmonthly"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="2."
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/twosub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="401"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/twocheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--time two end-->
+
+    <!--time three start-->
+
+    <LinearLayout
+        android:id="@+id/linear3inmonthly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear2inmonthly"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="3."
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/threesub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="402"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/threecheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!-- time three end-->
+
+    <!--time four start-->
+
+    <LinearLayout
+        android:id="@+id/linear4inmonthly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear3inmonthly"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="4."
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/foursub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="403"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/fourcheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- time four end-->
+
+    <!--time five start-->
+
+    <LinearLayout
+        android:id="@+id/linear5inmonthly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear4inmonthly"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="5."
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/fivesub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="404"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/fivecheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--time five end-->
+
+    <!--time six start-->
+
+    <LinearLayout
+        android:id="@+id/linear6inmonthly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear5inmonthly"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="6."
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/sixsub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="405"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/sixcheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--time six end-->
+
+    <!-- time seven start-->
+
+    <LinearLayout
+        android:id="@+id/linear7inmonthly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear6inmonthly"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="7."
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/sevensub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="406"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/sevencheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--time eight end-->
+
+    <!--time setion is ended-->
+
+
+    <me.myatminsoe.mdetect.MMButtonView
+        android:id="@+id/toedit"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/linear7inmonthly"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/greenbgforpresent"
+        android:padding="2dp"
+        android:text="@string/toedit"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/bottomdivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/toedit"
+        android:layout_margin="10dp"
+        android:background="@color/colorAccent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bottomdivider"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <me.myatminsoe.mdetect.MMTextView
+            android:id="@+id/isitoffday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/isitoffday"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/offdayswitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

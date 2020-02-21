@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aunthtoo.timetableforcupyay.LogIn">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/titletxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:gravity="center_horizontal"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:text="@string/app_name"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/titlelogo"
+                android:layout_width="@dimen/logosize"
+                android:layout_height="@dimen/logosize"
+                android:layout_below="@id/titletxt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@mipmap/ic_title_logo"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white">
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <!--    center content-->
+
+    <RelativeLayout
+        android:id="@+id/centercontent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/parentsize"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="@dimen/topmargin"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cardsize"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cardsize"
+                android:layout_gravity="center"
+                app:cardCornerRadius="@dimen/cardcornerradius"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <me.myatminsoe.mdetect.MMTextView
+                        android:id="@+id/filldetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="serif-monospace"
+                        android:gravity="center_horizontal"
+                        android:padding="2dp"
+                        android:text="@string/filldetail"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/rollnumberlinear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/filldetail"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal"
+                        android:weightSum="7">
+
+                        <Spinner
+                            android:id="@+id/spnYear"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="4"
+                            android:prompt="@string/prompt" />
+
+                        <EditText
+                            android:id="@+id/rollnumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="3"
+                            android:hint="Roll No"
+                            android:inputType="numberDecimal"
+                            android:singleLine="true"
+                            android:textSize="16sp" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/sectionline"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rollnumberlinear"
+                        android:layout_marginTop="13dp"
+                        android:orientation="horizontal"
+                        android:paddingTop="5dp"
+                        android:weightSum="8">
+
+                        <me.myatminsoe.mdetect.MMTextView
+                            android:id="@+id/choosesection"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="3"
+                            android:padding="2dp"
+                            android:text="@string/choosesection"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="15sp" />
+
+                        <Spinner
+                            android:id="@+id/spnSection"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="5"
+                            android:entries="@array/section"
+                            android:prompt="@string/prompt" />
+
+
+                    </LinearLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/textinputforname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sectionline"
+                        android:layout_margin="8dp">
+
+                        <EditText
+                            android:id="@+id/name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:textSize="15sp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/textinputforphno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textinputforname"
+                        android:layout_margin="8dp">
+
+                        <EditText
+                            android:id="@+id/phno"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="phone"
+                            android:singleLine="true"
+                            android:textSize="15sp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/enter"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/linear1"
+            android:layout_marginLeft="@dimen/login_reg_btn_margin"
+            android:layout_marginRight="@dimen/login_reg_btn_margin"
+            android:layout_marginTop="-30dp"
+            android:background="@drawable/rounded_btn_bg"
+            android:padding="5dp"
+            android:text="@string/enter"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/loginhelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="2dp"
+        android:shadowColor="@color/shadowcolor"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:text="@string/help"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+</RelativeLayout>

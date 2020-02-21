@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+
+    <tab
+        barColorWhenSelected="@color/barColor"
+        icon="@drawable/ic_timetable"
+        id="@+id/tab_timetable"
+        title="Time Table" />
+    <tab
+        barColorWhenSelected="@color/barColor"
+        icon="@drawable/ic_rollcall"
+        id="@+id/tab_rollcall"
+        title="Roll Call" />
+
+    <tab
+        barColorWhenSelected="@color/barColor"
+        icon="@drawable/ic_setting"
+        id="@+id/tab_setting"
+        title="@string/setting" />
+
+
+
+</tabs>

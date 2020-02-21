@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <me.myatminsoe.mdetect.MMTextView
+        android:id="@+id/previoustitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:padding="2dp"
+        android:text="@string/atpreviousday"
+        android:textColor="@color/colorAccent"
+        android:textSize="17sp" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/previoustitle"
+        android:layout_marginTop="5dp">
+
+
+        <RelativeLayout
+            android:id="@+id/forbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp">
+
+            <RadioGroup
+                android:id="@+id/rdgpdatepick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+            </RadioGroup>
+
+            <me.myatminsoe.mdetect.MMButtonView
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_below="@id/rdgpdatepick"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/greenbgforpresent"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="@string/ok"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

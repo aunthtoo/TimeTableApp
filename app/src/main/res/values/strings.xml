@@ -1,0 +1,246 @@
+<resources>
+    <string name="app_name">MMT RC</string>
+
+    <string-array name="years">
+        <item>1CST</item>
+        <item>2CS</item>
+        <item>2CT</item>
+        <item>3CS</item>
+        <item>3CT</item>
+        <item>4CS</item>
+        <item>4CT</item>
+        <item>5CS</item>
+        <item>5CT</item>
+    </string-array>
+
+    <string-array name="section">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+    </string-array>
+
+    <string name="prompt">Choose Year</string>
+    <string name="promptforsection">Choose Section</string>
+
+    <string name="enter">ဝင်မည်</string>
+    <string name="chooseyear">တက်ရောက်နေသော သင်တန်း :</string>
+    <string name="choosesection">တက်ရောက်နေသောအခန်း </string>
+    <string name="date">နေ့စွဲ </string>
+
+    <string name="subject">ဘာသာရပ် </string>
+    <string name="teacher">သင်ကြားမည့်ဆရာ </string>
+    <string name="absent">မတက်ပါ</string>
+    <string name="present">တက်မည်</string>
+
+    <string name="youmiss">သင်ဒီအချိန်ကို မတက်ဖြစ်တော့ပါ!</string>
+    <string name="youpresent">သင်ဒီအချိန်ကို တက်ဖြစ်ပါသည်!</string>
+    <string name="todaytimetable">နေ့ အတွက် အချိန်စာရင်း</string>
+
+    <string name="clickonthem">အကွက်လေးများကိုနှိပ်၍ အချက်အလက်အပြည့်အစုံကြည့်နိုင်သည််</string>
+    <string name="entercode">ရရှိသော ကုဒ် ၆ လုံးထည့်ပါ</string>
+    <string name="view">တစ်ပတ်လုံးစာ ကြည့်ရန်</string>
+
+
+    <string name="remainingtime">ပျက်၍ရသေးသော အချိန်များ </string>
+    <string name="absenttime"> ပျက်ထားပြီးသော အချိန်များ </string>
+    <string name="totaltime">တက်ရမည့်အချိန် စုစုပေါင်း </string>
+    <string name="totalday">တက်ရမည့်ရက် စုစုပေါင်း</string>
+
+    <string name="time">ချိန်</string>
+    <string name="day">ရက်</string>
+
+    <string name="name">အမည်</string>
+    <string name="phno">ဖုန်းနံပါတ်</string>
+
+    <string name="filldetail">အချက်အလက်များဖြည့်ပါ</string>
+
+    <string name="rollno">ခုံနံပါတ်</string>
+
+    <string name="timetable">အချိန်စာရင်း</string>
+    <string name="rollcall">ကျောင်းခေါ်ချိန်</string>
+
+    <string name="mon">တနင်္လာ</string>
+    <string name="tue">အင်္ဂါ</string>
+    <string name="wed">ဗုဒ္ဓဟူး</string>
+    <string name="thu">ကြာသပတေး</string>
+    <string name="fri">သောကြာ</string>
+    <string name="sat">စနေ</string>
+    <string name="sun">တနင်္ဂနွေ</string>
+
+    <string name="wholedayabsent">ဒီနေ့ တစ်နေ့လုံးမတက်ဘူးလား?</string>
+    <string name="yes">ဟုတ်</string>
+    <string name="no">တက်မယ်</string>
+
+    <string name="warning">သတိပေးချက်!</string>
+    <string name="warningq">မင်းဒီနေ့ ကျောင်းမတက်မှာသေချာလား?</string>
+    <string name="wyes">သေချာတယ်</string>
+    <string name="wno">မသေချာဘူး</string>
+
+    <string name="torefresh">ဒေတာများရယူလိုလျှင် အင်တာနက် အရင်ဖွင့်ထားပါ။ ပြီးမှ refresh လုပ်ပါ !</string>
+    <string name="refreshdone">ဒေတာများ ရယူပြီးပါပြီ !</string>
+    <string name="refreshstart">ဒေတာများ စတင်ရယူနေပါပြီ</string>
+
+    <string name="logintxt">Application ထဲသို့ ဝင်ရောက်ရန် အင်တာနက်အရင်ဖွင့်ထားပါ</string>
+    <string name="loginopen">ဖွင့်ရန်</string>
+
+    <string name="jan">ဇန်နဝါရီ</string>
+    <string name="feb">ဖေဖော်ဝါရီ</string>
+    <string name="mar">မတ်</string>
+    <string name="apr">ဧပြီ</string>
+    <string name="may">မေ</string>
+    <string name="jun">ဇွန်</string>
+    <string name="jul">ဇူလိုင်</string>
+    <string name="aug">ဩဂုတ်</string>
+    <string name="sep">စက်တင်ဘာ</string>
+    <string name="oct">အောက်တိုဘာ</string>
+    <string name="nov">နိုဝင်ဘာ</string>
+    <string name="dec">ဒီဇင်ဘာ</string>
+
+    <string name="plswait">ခဏစောင့်ပါ!!</string>
+
+    <string name="weektimetable">အချိန်စာရင်း</string>
+
+    <string name="teacherlist">ဆရာများ စာရင်းကြည့်ရန်</string>
+    <string name="teacherlistfordial">ဆရာများစာရင်း</string>
+
+    <string name="lunchtime">ထမင်းစားဆင်းချိန်</string>
+
+    <string name="monthly">လစဥ်</string>
+
+    <string name="exit">ထွက်ရန် နောက်တစ်ကြိမ်ထပ်နှိပ်ပါ!</string>
+
+    <string name="setting">ပြင်ဆင်ရန်</string>
+
+    <string name="nodatatxt">ဒေတာ မရှိသေးပါ !</string>
+
+    <!--ur detali-->
+
+    <string name="urdetail">သင့် အချက်အလက်များ</string>
+    <string name="urroll">ခုံနံပါတ်</string>
+    <string name="urname">အမည်</string>
+    <string name="urphno">ဖုန်းနံပါတ်</string>
+    <string name="edit">ပြင်ဆင်ရန်</string>
+    <string name="section">အခန်း</string>
+
+    <!--about-->
+
+    <string name="aboutapp">About App</string>
+
+    <string name="toedit">ပြင်မည်</string>
+
+    <string name="openinternet">အင်တာနက်အရင်ဖွင့်ထားပါ!</string>
+    <string name="signout">Log Out</string>
+
+    <string name="mingalarpar">မင်္ဂလာပါ</string>
+    <string name="plzchoosestartdate">၏ ကျောင်းစတက်ရသည့်ရက်ကို​ ရွေးပေးပါ</string>
+
+
+    <!--showcase texts-->
+    <string name="showcasetexttimetable">အချိန်စာရင်းကြည့်ရန်</string>
+    <string name="showcasetextroll">ကျောင်းခေါ်ချိန်ကြည့်ရန်</string>
+    <string name="showcasetextsetting">ပြုပြင်မှုများပြုလုပ်ရန်</string>
+
+    <string name="wholeday">တစ်နေ့လုံး ကျောင်းမတက်ဖြစ်သောနေ့များတွင် ဒီခလုတ်ကိုနှိပ်ပေးပါ</string>
+    <string name="currenttimeshow">သင့်ဖုန်း၏ နာရီအပေါ်မူတည်၍ သင်ကြားရမည့် ဘာသာရပ် အချိန်ကို ဒီနေရာမှာ ပြသပေးမည်</string>
+
+    <string name="currenttimeabsent">ထိုဘာသာရပ်သင်မည့်အချိန်တွင် မတက်ဖြစ်ပါက မတက်ပါ ကို နှိပ်ပေးပါ</string>
+
+    <string name="todayshow">သက်ဆိုင်ရာ နေ့အလိုက် သင်ကြားရမည့် တစ်နေ့တာ အချိန်စာရင်းကို ဤနေရာမှ ပြသပေးမည်</string>
+    <string name="todayshow2">တစ်ချိန်ကုန်တိုင်း မြှားလေး ရွေ့သွားမည်ဖြစ်သည်</string>
+    <string name="weektimetableshow">တစ်ပတ်လုံးစာ အချိန်စာရင်းကို သိလိုပါက ဒီကိုနှိပ်ပါ</string>
+
+    <string name="iknow">သိပြီ</string>
+    <string name="ok">အိုကေ</string>
+
+    <!--calendar view-->
+
+    <string name="material_calendar_monday">Mon</string>
+    <string name="material_calendar_tuesday">Tue</string>
+    <string name="material_calendar_wednesday">Wed</string>
+    <string name="material_calendar_thursday">Thu</string>
+    <string name="material_calendar_friday">Fri</string>
+    <string name="material_calendar_saturday">Sat</string>
+    <string name="material_calendar_sunday">Sun</string>
+
+    <array name="material_calendar_months_array">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </array>
+
+    <string name="url">http://aunthtoo.000webhostapp.com/timetable/year.json</string>
+    <string name="dataurl">http://aunthtoo.000webhostapp.com/timetable/datatable/</string>
+
+    <string name="enteraccesskey">လျှို့ဝှက်ကုဒ်နံပါတ် ရိုက်ထည့်ပါ</string>
+    <string name="accesskey">လျှို့ဝှက်ကုဒ်</string>
+
+    <string name="atpreviousday">App မသုံးဖြစ်််ခဲ့သည့်ရက်များတွင်</string>
+    <string name="previousabsent"> ရက် ကျောင်းမတက်ခဲ့ပါ</string>
+    <string name="previousfull">နေ့တိုင်း ကျောင်းတက်ခဲ့ပါသည်</string>
+
+    <string name="getnoti">သတိပေးချက် ရယူရန်</string>
+    <string name="timeinterval">သင်ကြားရမည့် အချိန်</string>
+
+    <string name="offday">နေ့‌ ကျောင်းပိတ်ပါသည်</string>
+    <string name="off"></string>
+    <string name="notidone">အတွက် သတိပေးချက်ရယူပြီးပါပြီ</string>
+    <string name="notiundo">အတွက် သတိပေးချက်မယူတော့ပါ</string>
+
+    <string name="offdays">ပိတ်ရက်များ</string>
+    <string name="presentdays">အချိန်ပြည့်တက်ဖြစ်သော ရက်များ</string>
+    <string name="absentdays">အချိန်ပြည့်မတက်ဖြစ်သော ရက်များ</string>
+
+    <string name="isitoffday">နေ့ ကျောင်းပိတ်ပါသည်</string>
+
+    <string name="thistimegotit">အချိန်ကိုရောက်ပါပြီ</string>
+
+    <string name="isifoff">ဒီနေ့ ကျောင်းပိတ်ရက်လား?</string>
+    <string name="mahote">မဟုတ်</string>
+
+    <string name="torestore">Restore လုပ်ရန်</string>
+    <string name="tobackup">Backup လုပ်ရန်</string>
+
+    <string name="restoring">Restore လုပ်နေပါသည်</string>
+    <string name="backuping">Backup လုပ်နေပါသည်</string>
+
+    <string name="restoredone">Restore လုပ်ပြီးပါပြီ</string>
+    <string name="backupdone">Backup လုပ်ပြီးပါပြီ</string>
+    <string name="filepickerstr">ကျေးဇူးပြု၍ restore လုပ်မည့် database ဖိုင်ကိုရွေးပေးပါ</string>
+
+    <!--about-->
+
+    <string name="logodesign">Logo Design</string>
+    <string name="zarni">Zarni Moe Htet (CU, Hpa-An)</string>
+
+    <string name="specialthank">Special Thank To</string>
+    <string name="myfri">Way Yan Min Oo, Way Yan Htun, Si Thu</string>
+
+    <string name="credit">Credit</string>
+    <string name="justmyacknowledge">My Acknowledgement</string>
+
+    <string name="feedback">Feedback</string>
+    <string name="togivefeedback">To give feedback</string>
+
+    <string name="help">Help</string>
+    <string name="togethelp">To get help</string>
+
+    <string name="contact">Contact</string>
+    <string name="contacttodev">Contact to developer</string>
+    <string name="version">Version</string>
+    <string name="v10">1.0</string>
+
+    <string name="developer">Developer</string>
+    <string name="zzz">Zzz... :3</string>
+
+    <string name="feedback_email">aunthtoo1111@gmail.com</string>
+
+</resources>

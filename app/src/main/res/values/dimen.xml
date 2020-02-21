@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="cardsize">330dp</dimen>
+    <dimen name="parentsize">350dp</dimen>
+
+    <dimen name="topmargin">170dp</dimen>
+    <dimen name="cardcornerradius">10dp</dimen>
+
+    <dimen name="login_reg_btn_margin">70dp</dimen>
+
+    <dimen name="logosize">70dp</dimen>
+    <dimen name="marginline">80dp</dimen>
+
+    <dimen name="btnwidth">80dp</dimen>
+    <dimen name="btnheight">30dp</dimen>
+
+    <dimen name="indicatorsize">15dp</dimen>
+
+    <dimen name="timesubsize">15sp</dimen>
+    <dimen name="timesize">15dp</dimen>
+
+    <dimen name="progresscirclesize">180dp</dimen>
+
+    <dimen name="nodatasize">60dp</dimen>
+
+    <dimen name="splogosize">110dp</dimen>
+
+    <!--for detail-->
+    <dimen name="detailtopmargin">10dp</dimen>
+    <dimen name="detailmargin">5dp</dimen>
+    <dimen name="detailpadding">3dp</dimen>
+
+    <dimen name="showcasetxtsize">10sp</dimen>
+</resources>

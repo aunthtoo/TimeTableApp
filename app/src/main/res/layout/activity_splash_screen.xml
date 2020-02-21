@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/time_bg_green"
+    android:layout_margin="3dp"
+    tools:context="com.aunthtoo.timetableforcupyay.splashscreen.SplashScreen">
+
+    <ImageView
+        android:id="@+id/splogo"
+        android:layout_width="@dimen/splogosize"
+        android:layout_height="@dimen/splogosize"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/sptitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/splogo"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="MMT RC"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/uniname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:text="Computer University, Pyay"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</RelativeLayout>
